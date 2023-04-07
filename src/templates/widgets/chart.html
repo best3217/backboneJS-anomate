@@ -8,18 +8,6 @@
         </div>
     </div>
     
-    <!-- <% if (labels) { %>
-      <ul class="widget-nav">
-          <% _.each(labels,function(value,key) { %>
-              <li>
-                  <a data-index="<%= key %>" data-status="true" href="#">
-                      <span style="background-color:<%= value.style %>" class="widget-nav-point"></span>
-                      <%= value.title %>
-                  </a>
-              </li>
-          <% }) %>
-      </ul>
-    <% } %> -->
    
     
     <div class="widget-body">
@@ -34,8 +22,21 @@
             <% } %>
           </div>
         <% } %>
-
         <canvas></canvas>
       </div>
+
+      <% if (labels) { %>
+        <ul class="widget-nav">
+            <% _.each(labels,function(value,key) { %>
+                <li>
+                    <a data-index="<%= key %>" data-status="true" href="#">
+                        <span style="background-color:<%= value.style %>" class="widget-nav-point"></span>
+                        <%= value.title %>
+                    </a>
+                    <div>55 / 8.09%</div>
+                </li>
+            <% }) %>
+        </ul>
+      <% } %>
     </div>
 </div>

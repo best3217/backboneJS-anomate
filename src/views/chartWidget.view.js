@@ -165,7 +165,7 @@ module.exports = Backbone.View.extend({
         function (value, key) {
           this.data.labels[key] = {
             title: value.label,
-            style: value.backgroundColor,
+            style: value.backgroundColor[0],
             id: key,
           };
         },

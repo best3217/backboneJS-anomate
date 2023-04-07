@@ -5,22 +5,22 @@ const data = {
   datasets: [
     {
       label: "Opened",
-      backgroundColor: ["rgba(125, 226, 255, 1)", "#F5F5F5"],
+      backgroundColor: ["rgba(125, 226, 255, 1)"],
       data: [80],
     },
     {
       label: "Clicked",
-      backgroundColor: ["rgba(179, 127, 235, 1)", "#F5F5F5"],
+      backgroundColor: ["rgba(179, 127, 235, 1)"],
       data: [60],
     },
     {
       label: "Purchased",
-      backgroundColor: ["rgba(255, 133, 192, 1)", "#F5F5F5"],
+      backgroundColor: ["rgba(255, 133, 192, 1)"],
       data: [50],
     },
     {
       label: "Unsubscribed",
-      backgroundColor: ["rgba(255, 229, 143, 1)", "#F5F5F5"],
+      backgroundColor: ["rgba(255, 229, 143, 1)"],
       data: [20],
     },
   ],

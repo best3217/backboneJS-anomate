@@ -25,13 +25,55 @@
   line-height: 20px;
 }
 
-.chart-wrapper {
+.widget-container .widget-body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.widget-container .widget-body .chart-wrapper {
   height: 300px;
+  aspect-ratio: 1;
+  width: 100%;
   position: relative;
+}
+
+.widget-container .widget-body .widget-nav {
+  width: 100%;
+  list-style-type: none;
+  padding: 0;
+}
+
+.widget-container .widget-body .widget-nav li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--color-secondary-7);
+}
+
+.widget-container .widget-body .widget-nav a {
+  text-decoration: none;
+  font-weight: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  color: var(--color-secondary-7);
+}
+
+.widget-container .widget-body .widget-nav a .widget-nav-point {
+  margin-right: 4px;
+  width: 8px;
+  aspect-ratio: 1;
+  border-radius: 2px;
+  display: inline-block;
 }
 
 .widget-container .chart-wrapper canvas {
   position: relative;
+  margin: 0;
   z-index: 2;
 }
 
