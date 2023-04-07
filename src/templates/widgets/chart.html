@@ -1,0 +1,41 @@
+<!-- prettier-ignore -->
+
+<div class="widget-container card-drop-box">
+    <div class="widget-header">
+        <div class="widget-title">
+            <%= header.title || '<h3 class="text-md">Widget title</h3>' %>
+            <%= header.label || '<span class="text-sm">Wiedget label</span>' %>
+        </div>
+    </div>
+    
+    <!-- <% if (labels) { %>
+      <ul class="widget-nav">
+          <% _.each(labels,function(value,key) { %>
+              <li>
+                  <a data-index="<%= key %>" data-status="true" href="#">
+                      <span style="background-color:<%= value.style %>" class="widget-nav-point"></span>
+                      <%= value.title %>
+                  </a>
+              </li>
+          <% }) %>
+      </ul>
+    <% } %> -->
+   
+    
+    <div class="widget-body">
+      <div class="chart-wrapper">
+        <% if (chartTitle) { %>
+          <div class="chart-title">
+            <% if (chartTitle.title) { %>
+              <h3 class="text-md"> <%= chartTitle.title %></h3>
+            <% } %>
+            <% if (chartTitle.label) { %>
+              <label class="text-sm"> <%= chartTitle.label %></label>
+            <% } %>
+          </div>
+        <% } %>
+
+        <canvas></canvas>
+      </div>
+    </div>
+</div>

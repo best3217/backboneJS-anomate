@@ -1,0 +1,65 @@
+.widget-container {
+  max-width: 600px;
+  border-radius: 24px;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 24px;
+  position: relative;
+}
+
+.widget-container .widget-title h3 {
+  margin: 0;
+  color: var(--color-gray-9);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 32px;
+}
+
+.widget-container .widget-title span {
+  margin: 0;
+  color: var(--color-secondary-4);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.chart-wrapper {
+  height: 300px;
+  position: relative;
+}
+
+.widget-container .chart-wrapper canvas {
+  position: relative;
+  z-index: 2;
+}
+
+.widget-container .chart-wrapper .chart-title {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  max-width: 300px;
+  z-index: 1;
+}
+
+.widget-container .chart-wrapper .chart-title h3 {
+  margin: 0;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 40px;
+  color: var(--color-gray-9);
+}
+
+.widget-container .chart-wrapper .chart-title label {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--color-secondary-7);
+}

@@ -10,15 +10,20 @@
     "start": "webpack serve --config webpack.config.js"
   },
   "devDependencies": {
-    "css-loader": "^6.7.3",
-    "mini-css-extract-plugin": "^2.7.5",
-    "style-loader": "^3.3.2",
     "webpack": "^5.78.0",
     "webpack-cli": "^5.0.1",
     "webpack-dev-server": "^4.13.2"
   },
   "dependencies": {
+    "@babel/core": "^7.21.4",
+    "babel-loader": "^9.1.2",
     "backbone": "^1.4.1",
-    "jquery": "^3.6.4"
+    "chart.js": "^4.2.1",
+    "css-loader": "^6.7.3",
+    "html-loader": "^4.2.0",
+    "jquery": "^3.6.4",
+    "mini-css-extract-plugin": "^2.7.5",
+    "style-loader": "^3.3.2",
+    "underscore": "^1.13.6"
   }
 }

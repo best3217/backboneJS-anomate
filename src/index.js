@@ -1,9 +1,9 @@
-var Backbone = require('backbone');
+const Backbone = require("backbone");
 
-var AppRouter = require('./app.router');
+const AppRouter = require("./app.router");
 
 Backbone.$(function () {
   new AppRouter();
-  
+
   Backbone.history.start();
 });
